@@ -8,6 +8,6 @@ window.addEventListener('load', function () {
         infinite: true,　　　　//スライドのループ
         pauseOnHover: false,   //ホバーしたときにスライドを一時停止しない　
         centerMode: true,
-        centerPadding: '5%',
+        centerPadding: '10%',
     })
 });
