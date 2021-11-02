@@ -545,23 +545,12 @@ footer .pr {display: block;font-size: 80%;}
 （CMSの場合は管理ページの「オプション1」～のプルダウンと、setup.phpの「オプション選択肢」に関連します）
 ---------------------------------------------------------------------------*/
 /*option1,option2共通*/
-span.option1, span.option2 {
-	text-align: center;
-	display: block;
-	font-size: 10px;	/*文字サイズ*/
-	width: 120px;		/*幅*/
-	position: absolute;
-	right: 0px;	/*ボックスに対して右から0pxの場所に配置*/
-	top: 0px;	/*ボックスに対して上から0pxの場所に配置*/
-	transform: rotate(45deg) translate(36px,-15px);	/*45度回転、右へ,下へ(マイナス設定なので上へ向けての指定)の移動距離*/
-	color: #FFF;	/*文字色*/
-	background: #999;	/*背景色*/
-}
+
 /*option1への追加設定*/
-span.option1 {
-	color: #FFF;		/*文字色*/
-	background: #F00;	/*背景色*/
-}
+/* span.option1 {
+	color: #FFF;		
+	background: #F00;	
+} */
 /*h2タグ内で使った場合のoption1とoption2*/
 h2 span.option1, h2 span.option2 {
 	width: auto;
@@ -573,18 +562,7 @@ h2 span.option1, h2 span.option2 {
 	padding: 0px 5px;
 }
 
-/*トップページのNEWアイコン
----------------------------------------------------------------------------*/
-.newicon {
-	background: #F00;	/*背景色*/
-	color: #FFF;		/*文字色*/
-	font-size: 70%;		/*文字サイズ*/
-	line-height: 1.5;
-	padding: 2px 5px;
-	border-radius: 2px;
-	margin: 0px 5px;
-	vertical-align: text-top;
-}
+
 
 /*UPアイコン
 ---------------------------------------------------------------------------*/
