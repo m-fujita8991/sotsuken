@@ -72,28 +72,30 @@ header #logo {
 ---------------------------------------------------------------------------*/
 /*メニューブロック*/
 
-nav{
+	nav ul{
+	display: table;
+	margin: 0 auto;
+	padding: 0 ;
+	width: 80%;
 	text-align: center;
 	}
-	nav ul{
-	margin: 0 ;
-	padding: 0 ;
+	nav li{
+	display: table-cell;
+	min-width: 50px;
 	}
-	nav ul li{
-	list-style: none;
-	display: inline-block;
-	width: 18%;
-	min-width: 90px;
-	}
-	nav ul li a{
+	nav a{
+	display: block;
+	width: 100%;
 	text-decoration: none;
-	color: #333;
+	color: #555;
+	padding-bottom: 5px;
 	}
-	nav ul li.current a{
-	color: #F33135;
+	nav li a.current{
+	border-bottom: 3px solid #92D050;
 	}
-	nav ul li a:hover{
+	nav li a:hover{
 	color: #E7DA66;
+	border-bottom: 3px solid #F0E475;
 	}
 
 #menubar {
