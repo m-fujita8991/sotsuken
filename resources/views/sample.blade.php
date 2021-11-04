@@ -11,6 +11,16 @@
         <h3>Thorax</h3>
             <h4>Prothorax</h4>
             <h4>Pterothorax</h4>
+        <table>
+            <tr><th>Name</th><th>Mail</th><th>Age</th></tr>
+            @foreach ($items as $item)
+                <tr>
+                    <td>{{$item->name}}</td>
+                    <td>{{$item->mail}}</td>
+                    <td>{{$item->age}}</td>
+                </tr>
+            @endforeach
+        </table>
     <form action="" method="post">
         {{@csrf_field()}}
         <button type="submit">aaaaa</button>
