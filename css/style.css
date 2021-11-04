@@ -21,8 +21,6 @@ ul {list-style-type: none;}
 ol {padding-left: 40px;padding-bottom: 15px;}
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
-video {max-width: 100%;}
-iframe {width: 100%;}
 
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
@@ -48,7 +46,7 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-	height: 70px;	/*高さ*/
+	height: 80px;	/*高さ*/
 	background: #66b3d3;	/*背景色*/
 	position: relative;
 }
@@ -58,8 +56,8 @@ header {
 }
 /*ロゴ画像（※トップページ以外）*/
 header #logo {
-	width: 150px;	/*画像幅*/
-	padding-top: 12px;	/*画像の上に空ける余白。バランスをとって下さい。*/
+	width: 200px;	/*画像幅*/
+	padding-top: 8px;	/*画像の上に空ける余白。バランスをとって下さい。*/
 }
 /*トップページのロゴ画像*/
 #top #logo img {
@@ -73,6 +71,31 @@ header #logo {
 /*メインメニューのブロック
 ---------------------------------------------------------------------------*/
 /*メニューブロック*/
+
+nav{
+	text-align: center;
+	}
+	nav ul{
+	margin: 0 ;
+	padding: 0 ;
+	}
+	nav ul li{
+	list-style: none;
+	display: inline-block;
+	width: 18%;
+	min-width: 90px;
+	}
+	nav ul li a{
+	text-decoration: none;
+	color: #333;
+	}
+	nav ul li.current a{
+	color: #F33135;
+	}
+	nav ul li a:hover{
+	color: #E7DA66;
+	}
+
 #menubar {
 	overflow: hidden;position: relative;z-index: 10;
 	text-align: center;	/*文字を中央に*/
@@ -465,81 +488,7 @@ footer .pr {display: block;font-size: 80%;}
 #copyright a {text-decoration: none;}
 #copyright a:hover {color: #666;}
 
-/*トップページ内「更新情報・お知らせ」ブロック
----------------------------------------------------------------------------*/
-/*見出しを含まないお知らせブロック*/
-#new dl {
-	padding: 0px 20px;		/*上下、左右へのブロック内の余白*/
-}
-/*日付設定*/
-#new dt {
-	float: left;
-	width: 9em;		/*幅*/
-	color: #66b3d3;	/*文字色*/
-	letter-spacing: 0.1em;
-}
-/*記事設定*/
-#new dd {
-	padding-left: 9em;
-}
 
-/*ta1設定
----------------------------------------------------------------------------*/
-/*テーブル１行目に入った見出し部分（※caption）*/
-.ta1 caption, .ta2 caption {
-	border: 1px solid #ccc;	/*テーブルの枠線の幅、線種、色*/
-	border-bottom: none;	/*下線だけ消す*/
-	text-align: left;		/*文字を左寄せ*/
-	background: #cce6f6;	/*背景色*/
-	font-weight: bold;		/*太字に*/
-	padding: 10px;	/*ボックス内の余白*/
-}
-/*ta1テーブル*/
-.ta1 {
-	width: 100%;
-	table-layout: fixed;
-	margin: 0 0 20px;
-	background: #fff;	/*背景色*/
-}
-.ta1, .ta1 td, .ta1 th {
-	border: 1px solid #ccc;	/*テーブルの枠線の幅、線種、色*/
-	padding: 10px;	/*ボックス内の余白*/
-	word-break: break-all;
-}
-/*左側ボックス*/
-.ta1 th {
-	width: 150px;	/*幅*/
-	text-align: center;	/*センタリング*/
-	font-weight: normal;
-}
-/*こだわりアイコンのフロート指定(CMS用)*/
-.ta1 td .specialbox label {
-	float: left;
-	display: inline-block;
-	margin-right: 5px;
-}
-.ta1 td .specialbox img {
-	vertical-align: middle;
-}
-
-/*inputボタン
----------------------------------------------------------------------------*/
-#contents input[type="submit"].btn,
-#contents input[type="button"].btn,
-#contents input[type="reset"].btn {
-	padding: 5px 10px;		/*上下、左右へのボックス内の余白*/
-	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
-	font-size: 20px;		/*文字サイズ*/
-	border-radius: 3px;		/*角丸のサイズ*/
-	background: #eee;		/*背景色*/
-}
-/*マウスオン時の設定*/
-#contents input[type="submit"].btn:hover,
-#contents input[type="button"].btn:hover,
-#contents input[type="reset"].btn:hover {
-	border: 1px solid #999;	/*枠線の幅、線種、色*/
-	background: #fff;		/*背景色*/
-}
 
 /*一覧ページのボックス内のアイコン
 （CMSの場合は管理ページの「オプション1」～のプルダウンと、setup.phpの「オプション選択肢」に関連します）
@@ -649,16 +598,15 @@ img.fr {float: right;width:30%;margin-left: 20px;margin-bottom: 20px;}
 
 /*メインメニュー
 ---------------------------------------------------------------------------*/
-/*メニュー１個あたりの設定*/
-#menubar-s ul li a {
-	padding: 10px;		/*メニュー内の余白*/
-	float: left;		/*左に回り込み*/
-	width: 40%;			/*幅*/
-	margin-left: 4%;	/*メニューの左側に空けるスペース*/
-}
+	/*メニュー１個あたりの設定*/
+	#menubar-s ul li a {
+		padding: 10px;		/*メニュー内の余白*/
+		float: left;		/*左に回り込み*/
+		width: 40%;			/*幅*/
+		margin-left: 4%;	/*メニューの左側に空けるスペース*/
+	}
 
 }
-
 
 
 /*画面幅800px以下の設定
@@ -749,21 +697,7 @@ body.is-fixed-menu #contents {
 	padding-top: 30px;
 }
 
-/*その他
----------------------------------------------------------------------------*/
-body.s-n .sub,body.s-n #footermenu {display: none;}
-.big1 {font-size: 20px;}
-.w50 {overflow: hidden;width: auto;}
-.fl {float: none;}
-.fr {float: none;}
-
 }
-
-
-
-/*画面幅600px以下の設定
-------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width:600px){
 
 /*ヘッダー
 ---------------------------------------------------------------------------*/
@@ -798,9 +732,6 @@ body.s-n .sub,body.s-n #footermenu {display: none;}
 	margin-bottom: 15px;
 	border-bottom: 1px solid #dcdcdc;
 }
-
-}
-
 
 
 /*画面幅480px以下の設定
@@ -847,17 +778,6 @@ body {
 /*section同士の余白*/
 .main section + section {
 	margin-top: 20px;
-}
-
-/*テーブル（ta1）
----------------------------------------------------------------------------*/
-/*ta1設定*/
-.ta1, .ta1 td, .ta1 th {
-	padding: 5px;	/*ボックス内の余白*/
-}
-/*ta1の左側ボックス*/
-.ta1 th {
-	width: 100px;
 }
 
 /*その他
