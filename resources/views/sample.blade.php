@@ -12,12 +12,13 @@
             <h4>Prothorax</h4>
             <h4>Pterothorax</h4>
         <table>
-            <tr><th>Name</th><th>Mail</th><th>Age</th></tr>
+            <tr><th>Name</th><th>Info</th><th>Price</th><th>Image</th></tr>
             @foreach ($items as $item)
                 <tr>
                     <td>{{$item->name}}</td>
-                    <td>{{$item->mail}}</td>
-                    <td>{{$item->age}}</td>
+                    <td>{{$item->info}}</td>
+                    <td>{{$item->price}}</td>
+                    <td><img src={{$item->image}}></td>
                 </tr>
             @endforeach
         </table>

@@ -24,11 +24,11 @@
 
 		<nav>
 			<ul>
-				<li><a href="hokkaido.html" class="current">北海道・東北</a></li>
+				<li><a href="hokkaido.html">北海道・東北</a></li>
 				<li><a href="kanto.html">関東</a></li>
 				<li><a href="tyubu.html">中部</a></li>
 				<li><a href="kinki.html">近畿</a></li>
-				<li><a href="tyugoku.html">中国・四国</a></li>
+				<li><a href="tyugoku.html"  class="current">中国・四国</a></li>
 				<li><a href="kyusyu.html">九州</a></li>
 			</ul>
 		</nav>
@@ -45,14 +45,14 @@
 
 						<div class="list">
 							<a href="hotel/sample.html">
-								<figure><img src="images/sample37.jpg" alt="写真の説明"></figure>
-								<h4>しもやまホテル岡山</h4>
+								<figure><img src={{$items[0]->image}} alt="写真の説明"></figure>
+								<h4>{{$items[0]->name}}</h4>
 								<table>
 									<tr>
 										<th>所在地</th>
-										<td>岡山市北区東古松南町</td>
+										<td>{{$items[0]->info}}</td>
 										<th>価格</th>
-										<td>30,000円</td>
+										<td>{{$items[0]->price}}</td>
 									</tr>
 									<tr>
 										<th>見出し</th>

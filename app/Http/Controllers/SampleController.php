@@ -8,11 +8,13 @@ use Illuminate\Support\Facades\DB;
 class SampleController extends Controller
 {
     public function index(){
-        $item = DB::select('select * from people');
+        $item = DB::select('select * from hotel');
         return view('sample',['items'=>$item]);
     }
 
+    // 中国・四国地方
     public function change(){
-        return view('sample2');
+        $item = DB::select('select * from hotel where locate_id = 5');
+        return view('sample2',['items'=>$item]);
     }
 }
