@@ -22,9 +22,6 @@
                 </tr>
             @endforeach
         </table>
-    <form action="" method="post">
-        {{@csrf_field()}}
-        <button type="submit">aaaaa</button>
-    </form>
+        <input type="button" onclick="location.href='sample2'" value="aaaa">
 </body>
 </html>

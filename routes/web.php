@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/sample',[SampleController::class, 'index']);
-Route::post('/sample',[SampleController::class, 'change']);
+Route::get('/sample2',[SampleController::class, 'change']);
