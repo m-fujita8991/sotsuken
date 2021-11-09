@@ -216,7 +216,7 @@ body.is-fixed #contents {
 /*mainブロック*/
 .main {
 	float: left;	/*左に回り込み*/
-	width: 75%;		/*メインコンテンツの幅*/
+	width: 100%;		/*メインコンテンツの幅*/
 }
 /*section同士の余白*/
 .main section + section {

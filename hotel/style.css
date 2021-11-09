@@ -19,7 +19,7 @@ body {
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
 ul {list-style-type: none;}
 ol {padding-left: 40px;padding-bottom: 15px;}
-img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+img {border: none;max-width: 70%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 
 /*リンク（全般）設定
@@ -210,7 +210,7 @@ body.is-fixed #contents {
 /*mainブロック*/
 .main {
 	float: left;	/*左に回り込み*/
-	width: 75%;		/*メインコンテンツの幅*/
+	width: 100%;		/*メインコンテンツの幅*/
 }
 /*section同士の余白*/
 .main section + section {
