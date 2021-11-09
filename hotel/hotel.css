@@ -5,7 +5,7 @@
 
 /*全体の設定
 ---------------------------------------------------------------------------*/
-html,body,#container {height: 100%;}
+html,body{height: 100%;}
 body {
 	margin: 0px;
 	padding: 0px;
@@ -19,8 +19,14 @@ body {
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
 ul {list-style-type: none;}
 ol {padding-left: 40px;padding-bottom: 15px;}
-img {border: none;max-width: 70%;height: auto;vertical-align: middle;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+
+#container{
+	min-height: 100vh;
+	padding-bottom: 60px;
+    position: relative;
+}
 
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
@@ -46,10 +52,9 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-	height: 70px;	/*高さ*/
-	background: #66b3d3;	/*背景色*/
-	position: relative;
+	height: 100px;	/*高さ*/
 	background: url(../images/header2.jpg) center / cover;
+	position: relative;
 }
 #top header {
 	min-height: 100%;
@@ -57,8 +62,8 @@ header {
 }
 /*ロゴ画像（※トップページ以外）*/
 header #logo {
-	width: 200px;	/*画像幅*/
-	padding-top: 3px;	/*画像の上に空ける余白。バランスをとって下さい。*/
+	width: 250px;	/*画像幅*/
+	padding-top: 10px;	/*画像の上に空ける余白。バランスをとって下さい。*/
 }
 /*トップページのロゴ画像*/
 #top #logo img {
@@ -69,9 +74,59 @@ header #logo {
 	width: 20%;	/*画像の幅*/
 }
 
+
+
 /*メインメニューのブロック
 ---------------------------------------------------------------------------*/
 /*メニューブロック*/
+
+	.search_box {
+		margin-top: 10px;
+		text-align: center;
+	}
+	.areaSelect{
+		font-size: 30px;
+		width: 400px;
+		height: 75px;
+		background:#fff;
+		color:#111;
+		border-radius:2em;
+		text-align: center;
+	}
+	.areaSelect:after{
+		border-bottom:#fff 5px solid;
+  		border-right:#fff 5px solid;
+	}
+	#pref{
+		font-size: 30px;
+		width: 400px;
+		height: 75px;
+		background:#fff;
+		color:#111;
+		border-radius:2em;
+		text-align: center;
+	}
+
+	#pref:after{
+		border-bottom:#fff 5px solid;
+  		border-right:#fff 5px solid;
+	}
+
+	.search_button{
+		display: inline-block;
+		text-decoration: none;
+		color: #67c5ff;
+		border: solid 2px #67c5ff;
+		border-radius: 3px;
+		transition:　.4s;
+		width: 160px;
+		height: 60px;
+		font-size: 30px;
+	}
+	.search_button:hover{
+		background: #67c5ff;
+  		color: white;
+	}
 
 	nav ul{
 	display: table;
@@ -171,7 +226,7 @@ body.is-fixed #contents {
 	clear: both;
 	margin-bottom: 20px;
 	color: #fff;		/*文字色*/
-	background: #66b3d3;	/*背景色*/
+	background: url(../images/header2.jpg) center / cover;	/*背景色*/
 	padding: 5px 20px;	/*上下、左右へのボックス内の余白*/
 	font-size: 20px;	/*文字サイズ*/
 	border-radius: 3px;	/*角丸のサイズ*/
@@ -795,6 +850,10 @@ body {
 /*section同士の余白*/
 .main section + section {
 	margin-top: 20px;
+}
+
+#contents .main .list img {
+    height: 75px;
 }
 
 /*その他
