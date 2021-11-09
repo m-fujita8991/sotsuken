@@ -1,0 +1,42 @@
+*{
+  min-width: 0;
+  min-height:0;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.slider {
+  margin: 0 0;
+  max-width: 50%;
+  height: auto;
+}
+
+.slide-img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider2 {
+  margin: 0 0;
+  max-width: 50%;
+  height: auto;
+}
+
+.slide-img2 {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.moji {
+  position:absolute;
+  top:25%;
+  left:37%;
+  font-size: 100px;
+}
