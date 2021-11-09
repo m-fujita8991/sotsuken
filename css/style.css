@@ -52,7 +52,7 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-	height: 70px;	/*高さ*/
+	height: 100px;	/*高さ*/
 	background: url(../images/header2.jpg) center / cover;
 	position: relative;
 }
@@ -62,8 +62,8 @@ header {
 }
 /*ロゴ画像（※トップページ以外）*/
 header #logo {
-	width: 200px;	/*画像幅*/
-	padding-top: 3px;	/*画像の上に空ける余白。バランスをとって下さい。*/
+	width: 250px;	/*画像幅*/
+	padding-top: 10px;	/*画像の上に空ける余白。バランスをとって下さい。*/
 }
 /*トップページのロゴ画像*/
 #top #logo img {
@@ -85,25 +85,43 @@ header #logo {
 		text-align: center;
 	}
 	.areaSelect{
-		font-size: 20px;
-		width: 300px;
-		height: 35px;
+		font-size: 30px;
+		width: 400px;
+		height: 75px;
+		background:#fff;
+		color:#111;
+		border-radius:2em;
+		text-align: center;
+	}
+	.areaSelect:after{
+		border-bottom:#fff 5px solid;
+  		border-right:#fff 5px solid;
 	}
 	#pref{
-		font-size: 20px;
-		width: 250px;
-		height: 35px;
+		font-size: 30px;
+		width: 400px;
+		height: 75px;
+		background:#fff;
+		color:#111;
+		border-radius:2em;
+		text-align: center;
 	}
+
+	#pref:after{
+		border-bottom:#fff 5px solid;
+  		border-right:#fff 5px solid;
+	}
+
 	.search_button{
 		display: inline-block;
 		text-decoration: none;
 		color: #67c5ff;
 		border: solid 2px #67c5ff;
 		border-radius: 3px;
-		transition: .4s;
-		width: 100px;
-		height: 35px;
-		font-size: 18px;
+		transition:　.4s;
+		width: 160px;
+		height: 60px;
+		font-size: 30px;
 	}
 	.search_button:hover{
 		background: #67c5ff;
