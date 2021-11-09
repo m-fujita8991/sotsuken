@@ -449,11 +449,15 @@ ul.submenu li a {
 /*フッター設定
 ---------------------------------------------------------------------------*/
 footer {
-	clear: both;position: relative;z-index: 1;
+	clear: both;
+	z-index: 1;
 	font-size: 12px;		/*文字サイズ*/
-	background: #66b3d3;	/*背景色*/
+	background: url(../images/header2.jpg) center / cover;	/*背景色*/
 	color: #fff;	/*文字色*/
 	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 footer a {color: #fff;}
 footer a:hover {color: #fff;}
