@@ -5,7 +5,7 @@
 
 /*全体の設定
 ---------------------------------------------------------------------------*/
-html,body,#container {height: 100%;}
+html,body{height: 100%;}
 body {
 	margin: 0px;
 	padding: 0px;
@@ -21,6 +21,12 @@ ul {list-style-type: none;}
 ol {padding-left: 40px;padding-bottom: 15px;}
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+
+#container{
+	min-height: 100vh;
+	padding-bottom: 60px;
+    position: relative;
+}
 
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
@@ -448,11 +454,15 @@ ul.submenu li a {
 /*フッター設定
 ---------------------------------------------------------------------------*/
 footer {
-	clear: both;position: relative;z-index: 1;
+	clear: both;
+	z-index: 1;
 	font-size: 12px;		/*文字サイズ*/
 	background: #66b3d3;	/*背景色*/
 	color: #fff;	/*文字色*/
 	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 footer a {color: #fff;}
 footer a:hover {color: #fff;}
