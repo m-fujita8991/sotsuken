@@ -49,6 +49,7 @@ header {
 	height: 70px;	/*高さ*/
 	background: #66b3d3;	/*背景色*/
 	position: relative;
+	background: url(../images/header2.jpg) center / cover;
 }
 #top header {
 	min-height: 100%;
