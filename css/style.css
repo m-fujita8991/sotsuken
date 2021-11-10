@@ -83,9 +83,10 @@ header #logo {
 
 .search_box {
 	position: relative;
-	width: 90%;
+	width: 70%;
 	margin: 2em auto;
 	text-align: center;
+	display: flex;
 }
 .areaSelect {
 	position: relative;
@@ -103,7 +104,7 @@ header #logo {
 	outline: none;
 	border-bottom: 1px solid rgba(0,0,0, 0);
 }
-.search_box .areaSelect {
+.search_box .areaSelect .pref{
 	appearance: none;
 	-webkit-appearance:none
 }
@@ -117,7 +118,6 @@ header #logo {
 	width: 0;
 	height: 0;
 	padding: 0;
-	content: '';
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
 	border-top: 6px solid rgba(0, 0, 0, 0.3);
@@ -133,57 +133,46 @@ header #logo {
 	top: 10px;
 	transition: 0.2s ease all;
 }
-.areaSelect:focus ~ .areaSelect_selectlabel, .areaSelect:valid ~ .areaSelect_selectlabel {
-	color: #da3c41;
+.areaSelect:valid ~ .areaSelect_selectlabel {
+	color: rgba(0,0,0,0.5);
 	top: -20px;
 	transition: 0.2s ease all;
 	font-size: 14px;
 }
-.areaSelect_selectbar {
+
+.pref {
 	position: relative;
-	display: block;
+	font-family: inherit;
+	background-color: transparent;
 	width: 100%;
+	padding: 10px 10px 10px 0;
+	font-size: 18px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0, 0.3);
+	text-align: center;
 }
-.areaSelect_selectbar:before, .areaSelect_selectbar:after {
-	content: '';
-	height: 2px;
-	width: 0;
-	bottom: 1px;
+.pref:focus {
+	outline: none;
+	border-bottom: 1px solid rgba(0,0,0, 0);
+}
+
+.pref_selectlabel {
+	color: rgba(0,0,0, 0.5);
+	font-size: 18px;
+	font-weight: normal;
 	position: absolute;
-	background: #da3c41;
+	pointer-events: none;
+	left: 47%;
+	top: 10px;
 	transition: 0.2s ease all;
 }
-.areaSelect_selectbar:before {
-	left: 50%;
+.pref:valid ~ .pref_selectlabel {
+	color: rgba(0,0,0,0.5);
+	top: -20px;
+	transition: 0.2s ease all;
+	font-size: 14px;
 }
-.areaSelect_selectbar:after {
-	right: 50%;
-}
-.areaSelect:focus ~ .areaSelect_selectbar:before, .areaSelect:focus ~ .areaSelect_selectbar:after {
-	width: 50%;
-}
-.areaSelect_highlight {
-	position: absolute;
-	top: 25%;
-	left: 0;
-	pointer-events: none;
-	opacity: 0.5;
-}
-
-	#pref{
-		font-size: 30px;
-		width: 400px;
-		height: 75px;
-		background:#fff;
-		color:#111;
-		border-radius:2em;
-		text-align: center;
-	}
-
-	#pref:after{
-		border-bottom:#fff 5px solid;
-  		border-right:#fff 5px solid;
-	}
 
 	.search_button{
 		display: inline-block;
@@ -195,6 +184,7 @@ header #logo {
 		width: 160px;
 		height: 60px;
 		font-size: 30px;
+		margin-left:10px;
 	}
 	.search_button:hover{
 		background: #67c5ff;
