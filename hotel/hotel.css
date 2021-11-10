@@ -50,13 +50,8 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
   }
 
 /* 食事タブ */
-<<<<<<< HEAD
 .area {
     width: 100%;
-=======
-.rice {
-    width: 500px;
->>>>>>> 7018d66dd6bc64af75461dfdd15df77152bad3b9
     margin: auto;
     flex-wrap: wrap;
     display: flex;
