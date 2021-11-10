@@ -50,7 +50,7 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
   }
 
 /* 食事タブ */
-.area {
+.rice {
     width: 500px;
     margin: auto;
     flex-wrap: wrap;
@@ -82,7 +82,15 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
     display: none;
     width: 100%;
   }
-   
+
+  .flex-rice {
+    flex-basis: 100%;
+  }
+
+  .rice-image-wrap{
+	margin: 70px 20px;
+  }
+  
   input:checked + .tab_class + .content_class {
     display: block;
   }
