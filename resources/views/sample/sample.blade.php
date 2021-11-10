@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<link rel="stylesheet" href="css/sample.css">
+<link rel="stylesheet" href="css/sample/sample.css">
 </head>
 <body>
 <h1>Beetles</h1>

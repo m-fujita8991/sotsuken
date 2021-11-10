@@ -9,12 +9,12 @@ class SampleController extends Controller
 {
     public function index(){
         $item = DB::select('select * from hotel');
-        return view('sample',['items'=>$item]);
+        return view('sample/sample',['items'=>$item]);
     }
 
     // 中国・四国地方
     public function change(){
         $item = DB::select('select * from hotel where locate_id = 5');
-        return view('sample2',['items'=>$item]);
+        return view('sample/sample2',['items'=>$item]);
     }
 }
