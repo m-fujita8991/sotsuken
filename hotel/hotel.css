@@ -50,8 +50,13 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
   }
 
 /* 食事タブ */
+<<<<<<< HEAD
 .area {
     width: 100%;
+=======
+.rice {
+    width: 500px;
+>>>>>>> 7018d66dd6bc64af75461dfdd15df77152bad3b9
     margin: auto;
     flex-wrap: wrap;
     display: flex;
@@ -91,7 +96,15 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 	  float: right;
 	  width: 50%;
   }
-   
+
+  .flex-rice {
+    flex-basis: 100%;
+  }
+
+  .rice-image-wrap{
+	margin: 70px 20px;
+  }
+  
   input:checked + .tab_class + .content_class {
     display: block;
   }
