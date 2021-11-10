@@ -50,7 +50,7 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
   }
 
 /* 食事タブ */
-.area {
+.rice {
     width: 100%;
     margin: auto;
     flex-wrap: wrap;
@@ -58,11 +58,11 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
   }
    
   .tab_class {
-    width: calc(100%/5);
+    width: calc(100%/8);
     height: 50px;
     background-color: darkgrey;
     line-height: 50px;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     display: block;
     float: left;
@@ -83,21 +83,17 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
     width: 100%;
 	overflow: hidden;
   }
+
+  /* 飯の左の画像 */
   .image_left{
 	  float: left;
-	  width: 50%;
+	  width: 48%;
   }
+
+  /* 飯の右の画像 */
   .image_right{
 	  float: right;
-	  width: 50%;
-  }
-
-  .flex-rice {
-    flex-basis: 100%;
-  }
-
-  .rice-image-wrap{
-	margin: 70px 20px;
+	  width: 48%;
   }
   
   input:checked + .tab_class + .content_class {
