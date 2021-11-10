@@ -177,18 +177,10 @@ header #logo {
 	.search_button{
 		display: inline-block;
 		text-decoration: none;
-		color: #67c5ff;
-		border: solid 2px #67c5ff;
-		border-radius: 3px;
-		transition:　.4s;
-		width: 160px;
-		height: 60px;
-		font-size: 30px;
+		width: 80px;
+		height: 30px;
+		margin-top: 10px;
 		margin-left:10px;
-	}
-	.search_button:hover{
-		background: #67c5ff;
-  		color: white;
 	}
 
 	nav ul{
