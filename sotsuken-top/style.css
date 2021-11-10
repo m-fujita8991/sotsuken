@@ -28,15 +28,25 @@
   left:1%;
   font-family: 'Hina Mincho', serif;
   font-size: 65px;
-  color: black;
+  color: rgb(66, 66, 66);
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px 20px 30px 40px;
+}
+
+.band {
+  position:absolute;
+  padding: 0%;
+  margin: 0%;
+  top:30%;
+  height: 100px;
+  width: 95%;
+  background: linear-gradient(to right, rgb(125,185,232,0) 0%,rgba(171, 216, 255, 0.7) 30%,rgba(125,185,232,0) 100%);/* グラデーション指定 */
 }
 
 .logo {
   position:absolute;
   top:30%;
-  left:37%;
+  left:38%;
   height:100px;
 }
 
