@@ -51,7 +51,7 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 
 /* 食事タブ */
 .area {
-    width: 500px;
+    width: 100%;
     margin: auto;
     flex-wrap: wrap;
     display: flex;
@@ -81,12 +81,21 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
   .content_class {
     display: none;
     width: 100%;
+	overflow: hidden;
+  }
+  .image_left{
+	  float: left;
+	  width: 50%;
+  }
+  .image_right{
+	  float: right;
+	  width: 50%;
   }
    
   input:checked + .tab_class + .content_class {
     display: block;
   }
-   
+
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
 a {
