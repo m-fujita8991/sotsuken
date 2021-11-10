@@ -164,7 +164,7 @@ header #logo {
 	font-weight: normal;
 	position: absolute;
 	pointer-events: none;
-	left: 47%;
+	left: 48%;
 	top: 10px;
 	transition: 0.2s ease all;
 }
