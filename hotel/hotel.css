@@ -27,6 +27,27 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 	padding-bottom: 60px;
     position: relative;
 }
+/* 施設＆部屋タブ */
+.flex-container {
+    display: flex;
+}
+
+.image-wrap{
+    margin: 10px 5px;
+}
+
+.image-wrap img {
+    width: 100%;
+    height: 300px;
+}
+
+.flex-item {
+    flex-basis: 100%;
+}
+
+#pic_frame {
+	text-align: center;
+  }
 
 /* 食事タブ */
 .area {
