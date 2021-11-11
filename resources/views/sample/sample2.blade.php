@@ -50,6 +50,7 @@
 				});
 			</script>
 			@csrf
+			
 
 			<select class="areaSelect" id="areaSelect" name="locate_id" required>
 				<option hidden disabled selected></option>
