@@ -12,9 +12,20 @@ class SampleController extends Controller
         return view('sample/sample',['items'=>$item]);
     }
 
-    // 中国・四国地方
     public function change(){
-        $item = DB::select('select * from hotel where locate_id = 5');
+        $item = DB::select('select * from hotel');
         return view('sample/sample2',['items'=>$item]);
+    }
+
+    public function search(Request $request){
+        $locate = $request->locate_id;
+        $prefecture = $request->prefecture_id;
+        if($prefecture == 0){
+            $item = DB::select("select * from hotel where locate_id = $locate");
+            return view('sample/sample2',['items'=>$item]);
+        }else{
+            $item = DB::select("select * from hotel where prefecture_id = $prefecture");
+            return view('sample/sample2',['items'=>$item]);
+        }
     }
 }

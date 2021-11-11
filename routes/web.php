@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 Route::get('/sample',[SampleController::class, 'index']);
 Route::get('/sample2',[SampleController::class, 'change']);
+Route::post('/sample2',[SampleController::class, 'search']);

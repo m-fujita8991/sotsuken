@@ -49,8 +49,9 @@
 					});
 				});
 			</script>
+			@csrf
 
-			<select class="areaSelect" id="areaSelect" required>
+			<select class="areaSelect" id="areaSelect" name="locate_id" required>
 				<option hidden disabled selected></option>
 				<option value="0">北海道・東北</option>
 				<option value="1">関東</option>
@@ -61,7 +62,7 @@
 			</select>
 			<label class="areaSelect_selectlabel">地域を選択してください</label>
 
-			<select class="pref" id="pref" re></select>
+			<select class="pref" id="pref" name="prefecture_id" required></select>
 			<label class="pref_selectlabel">県名を選択してください</label>
 
 			<input type="image" class="search_button" src="images/search.png" onmouseover="this.src='images/search2.png'" onmouseout="this.src='images/search.png'">
@@ -76,95 +77,22 @@
 					<section>
 
 						<h2>ホテル　一覧</h2>
+						@for($i=0;$i < count($items);$i++)
 						<div class="list">
 							<a href="hotel/hotel.html">
-								<figure><img src="images/hotel_wakayama.jpg" alt="写真の説明"></figure>
-								<h4>南紀白浜マリオネットホテル</h4>
+								<figure><img src={{$items[$i]->image}} alt="写真の説明"></figure>
+								<h4>{{$items[$i]->name}}</h4>
 								<table>
 									<tr>
 										<th>所在地</th>
-										<td>岡山市北区東古松南町</td>
+										<td>{{$items[$i]->building}}</td>
 										<th>価格</th>
-										<td>30,000円</td>
-									</tr>
-									<tr>
-										<th>見出し</th>
-										<td>サンプルテキスト。</td>
-										<th>見出し</th>
-										<td>サンプルテキスト。</td>
+										<td>{{$items[$i]->price}}円</td>
 									</tr>
 								</table>
-
 							</a>
 						</div>
-
-						<div class="list">
-							<a href="hotel/hotel.html">
-								<figure><img src="images/hotel_osaka.jpg" alt="写真の説明"></figure>
-								<h4>ウェスティンホテル大阪</h4>
-								<table>
-									<tr>
-										<th>所在地</th>
-										<td>岡山市東区西大寺松崎</td>
-										<th>価格</th>
-										<td>200円</td>
-									</tr>
-									<tr>
-										<th>見出し</th>
-										<td>サンプルテキスト。</td>
-										<th>見出し</th>
-										<td>サンプルテキスト。</td>
-									</tr>
-								</table>
-
-							</a>
-						</div>
-
-						<div class="list">
-							<a href="hotel/hotel.html">
-								<figure><img src="images/hotel_wakayama.jpg" alt="写真の説明"></figure>
-								<h4>南紀白浜マリオネットホテル</h4>
-								<table>
-									<tr>
-										<th>所在地</th>
-										<td>岡山市北区東古松南町</td>
-										<th>価格</th>
-										<td>30,000円</td>
-									</tr>
-									<tr>
-										<th>見出し</th>
-										<td>サンプルテキスト。</td>
-										<th>見出し</th>
-										<td>サンプルテキスト。</td>
-									</tr>
-								</table>
-
-							</a>
-						</div>
-						
-						<div class="list">
-							<a href="hotel/hotel.html">
-								<figure><img src="images/hotel_wakayama.jpg" alt="写真の説明"></figure>
-								<h4>南紀白浜マリオネットホテル</h4>
-								<table>
-									<tr>
-										<th>所在地</th>
-										<td>岡山市北区東古松南町</td>
-										<th>価格</th>
-										<td>30,000円</td>
-									</tr>
-									<tr>
-										<th>見出し</th>
-										<td>サンプルテキスト。</td>
-										<th>見出し</th>
-										<td>サンプルテキスト。</td>
-									</tr>
-								</table>
-
-							</a>
-						</div>
-
-
+						@endfor
 					</section>
 
 				</div>
