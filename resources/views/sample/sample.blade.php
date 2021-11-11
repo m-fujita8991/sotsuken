@@ -16,7 +16,7 @@
             @foreach ($items as $item)
                 <tr>
                     <td>{{$item->name}}</td>
-                    <td>{{$item->info}}</td>
+                    <td>{{$item->building}}</td>
                     <td>{{$item->price}}</td>
                     <td><img src={{$item->image}}></td>
                 </tr>
