@@ -894,7 +894,7 @@ body.is-fixed-menu #contents {
 /*全体の設定
 ---------------------------------------------------------------------------*/
 body {
-	font-size: 12px;	/*文字サイズ*/
+	font-size: 8px;	/*文字サイズ*/
 	line-height: 1.5;	/*行間*/
 }
 
@@ -922,7 +922,19 @@ body {
 
 #pic_frame {
 	text-align: center;
-  }
+}
+
+.tab_class {
+    width: calc(100%/8);
+    height: 25px;
+    background-color: darkgrey;
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    float: left;
+    order: -1;
+}
 
 /*inner
 ---------------------------------------------------------------------------*/
