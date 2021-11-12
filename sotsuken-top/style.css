@@ -27,7 +27,7 @@
   font-size: 65px;
   color: rgb(66, 66, 66);
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 10px 20px 30px 40px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .band {
@@ -150,6 +150,8 @@
 	margin-left:10px;
 }
 
+.sp { display: none !important; }
+
 /* ↑PC css ↓スマホ css */
 
 @media only screen and (max-width: 480px) {
@@ -164,35 +166,35 @@
   
   .moji {
     position:absolute;
-    top:55%;
-    left:1%;
+    top:60%;
+    left:5%;
     font-family: 'Hina Mincho', serif;
-    font-size: 30px;
+    font-size: 20px;
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px 20px 30px 40px;
+    z-index: 1;
   }
   
   .band {
     position:absolute;
     padding: 0%;
     margin: 0%;
-    top:10%;
+    top:0%;
     height: 50px;
     width: 99%;
     background: linear-gradient(to right, rgb(125,185,232,0) 0%,rgba(200, 220, 238, 0.7) 30%,rgba(125,185,232,0) 100%);/* グラデーション指定 */
   }
   .logo {
     position:absolute;
-    top:10%;
+    top:0%;
     left:25%;
     height:50px;
   }
   
   .search_box {
     position: absolute;
-    top: 45%;
-    left: 5%;
+    top: 35%;
+    left: 10%;
     width: 80%;
     margin: 2em auto;
     text-align: center;
@@ -300,4 +302,15 @@
     margin-top: 10px;
     margin-left:10px;
   }
+
+  .sp {
+     display: block !important;
+     position: absolute;
+     top: 8%;
+     left: 0%;
+     height: 100%;
+     width:102%;
+     opacity: 0.6;
+  }
+
 }
