@@ -6,7 +6,7 @@
 	<title>素泊まり.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sample/style.css?20211112">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
@@ -16,7 +16,7 @@
 
 		<header>
 			<div class="inner">
-				<h1 id="logo"><a href="sotsuken-top/top.html"><img src="images/logo.png" alt="素泊まり.com"></a></h1>
+				<h1 id="logo"><a href=""><img src="image/index/logo.png" alt="素泊まり.com"></a></h1>
 			</div>
 
 		</header>
@@ -66,7 +66,7 @@
 			<select class="pref" id="pref" name="prefecture_id" required></select>
 			<label class="pref_selectlabel">県名を選択してください</label>
 
-			<input type="image" class="search_button" src="images/search.png" onmouseover="this.src='images/search2.png'" onmouseout="this.src='images/search.png'">
+			<input type="image" class="search_button" src="image/index/search.png" onmouseover="this.src='image/index/search2.png'" onmouseout="this.src='image/index/search.png'">
 		</form>
 
 		<div id="contents">
@@ -78,22 +78,31 @@
 					<section>
 
 						<h2>ホテル　一覧</h2>
-						@for($i=0;$i < count($items);$i++)
-						<div class="list">
-							<a href="hotel/hotel.html">
-								<figure><img src={{$items[$i]->image}} alt="写真の説明"></figure>
-								<h4>{{$items[$i]->name}}</h4>
-								<table>
-									<tr>
-										<th>所在地</th>
-										<td>{{$items[$i]->building}}</td>
-										<th>価格</th>
-										<td>{{$items[$i]->price}}円</td>
-									</tr>
-								</table>
-							</a>
-						</div>
-						@endfor
+						@if(count($items) == 0)
+							<div class="item_count">
+								<p>検索結果は{{count($items)}}件です。</p>
+							</div>
+						@else
+							<div class="item_count">
+								<p>検索結果は{{count($items)}}件です。</p>
+							</div>
+							@for($i=0;$i < count($items);$i++)
+							<div class="list">
+								<a href="">
+									<figure><img src={{$items[$i]->image}} alt="写真の説明"></figure>
+									<h4>{{$items[$i]->name}}</h4>
+									<table>
+										<tr>
+											<th>所在地</th>
+											<td>{{$items[$i]->building}}</td>
+											<th>価格</th>
+											<td>{{$items[$i]->price}}円</td>
+										</tr>
+									</table>
+								</a>
+							</div>
+							@endfor
+						@endif
 					</section>
 
 				</div>

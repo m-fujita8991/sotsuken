@@ -5,7 +5,7 @@
 
 /*全体の設定
 ---------------------------------------------------------------------------*/
-html,body,#container {height: 100%;}
+html,body{height: 100%;}
 body {
 	margin: 0px;
 	padding: 0px;
@@ -21,6 +21,13 @@ ul {list-style-type: none;}
 ol {padding-left: 40px;padding-bottom: 15px;}
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
 table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+
+#container{
+	min-height: 100vh;
+	padding-bottom: 60px;
+    position: relative;
+	background: #fafafa;
+}
 
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
@@ -46,8 +53,8 @@ a:hover {
 ---------------------------------------------------------------------------*/
 /*ヘッダーブロック*/
 header {
-	height: 70px;	/*高さ*/
-	background: #66b3d3;	/*背景色*/
+	height: 100px;	/*高さ*/
+	background: url(../../image/index/header.jpg) center / cover;
 	position: relative;
 }
 #top header {
@@ -56,8 +63,8 @@ header {
 }
 /*ロゴ画像（※トップページ以外）*/
 header #logo {
-	width: 200px;	/*画像幅*/
-	padding-top: 3px;	/*画像の上に空ける余白。バランスをとって下さい。*/
+	width: 250px;	/*画像幅*/
+	padding-top: 10px;	/*画像の上に空ける余白。バランスをとって下さい。*/
 }
 /*トップページのロゴ画像*/
 #top #logo img {
@@ -68,9 +75,114 @@ header #logo {
 	width: 20%;	/*画像の幅*/
 }
 
+
+
 /*メインメニューのブロック
 ---------------------------------------------------------------------------*/
 /*メニューブロック*/
+
+.search_box {
+	position: relative;
+	width: 70%;
+	margin: 2em auto;
+	text-align: center;
+	display: flex;
+}
+.areaSelect {
+	position: relative;
+	font-family: inherit;
+	background-color: transparent;
+	width: 100%;
+	padding: 10px 10px 10px 0;
+	font-size: 18px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid rgba(4, 20, 245, 0.3);
+
+	text-align: center;
+}
+.areaSelect:focus {
+	outline: none;
+	border-bottom: 1px solid rgba(0,0,0, 0);
+}
+.search_box .areaSelect .pref{
+	appearance: none;
+	-webkit-appearance:none
+}
+.search_box select::-ms-expand {
+	display: none;
+}
+.search_box:after {
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	padding: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid rgba(0, 0, 0, 0.3);
+	pointer-events: none;
+}
+.areaSelect_selectlabel {
+	color: rgba(0,0,0, 0.5);
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	top: 10px;
+	transition: 0.2s ease all;
+}
+.areaSelect:valid ~ .areaSelect_selectlabel {
+	color: rgba(0,0,0,0.5);
+	top: -20px;
+	transition: 0.2s ease all;
+	font-size: 14px;
+}
+
+.pref {
+	position: relative;
+	font-family: inherit;
+	background-color: transparent;
+	width: 100%;
+	padding: 10px 10px 10px 0;
+	font-size: 18px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid rgba(4, 20, 245, 0.3);
+	text-align: center;
+}
+.pref:focus {
+	outline: none;
+	border-bottom: 1px solid rgba(0,0,0, 0);
+}
+
+.pref_selectlabel {
+	color: rgba(0,0,0, 0.5);
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 48%;
+	top: 10px;
+	transition: 0.2s ease all;
+}
+.pref:valid ~ .pref_selectlabel {
+	color: rgba(0,0,0,0.5);
+	top: -20px;
+	transition: 0.2s ease all;
+	font-size: 14px;
+}
+
+	.search_button{
+		display: inline-block;
+		text-decoration: none;
+		width: 80px;
+		height: 30px;
+		margin-top: 10px;
+		margin-left:10px;
+	}
 
 	nav ul{
 	display: table;
@@ -170,7 +282,7 @@ body.is-fixed #contents {
 	clear: both;
 	margin-bottom: 20px;
 	color: #fff;		/*文字色*/
-	background: #66b3d3;	/*背景色*/
+	background: url(../../image/index/header.jpg) center / cover;	/*背景色*/
 	padding: 5px 20px;	/*上下、左右へのボックス内の余白*/
 	font-size: 20px;	/*文字サイズ*/
 	border-radius: 3px;	/*角丸のサイズ*/
@@ -204,13 +316,17 @@ body.is-fixed #contents {
 #contents p + p {
 	margin-top: -10px;
 }
+.item_count{
+	font-size: 30px;
+	padding-left: 40px;
+}
 
 /*mainコンテンツ
 ---------------------------------------------------------------------------*/
 /*mainブロック*/
 .main {
 	float: left;	/*左に回り込み*/
-	width: 75%;		/*メインコンテンツの幅*/
+	width: 100%;		/*メインコンテンツの幅*/
 }
 /*section同士の余白*/
 .main section + section {
@@ -448,11 +564,15 @@ ul.submenu li a {
 /*フッター設定
 ---------------------------------------------------------------------------*/
 footer {
-	clear: both;position: relative;z-index: 1;
+	clear: both;
+	z-index: 1;
 	font-size: 12px;		/*文字サイズ*/
-	background: #66b3d3;	/*背景色*/
+	background: url(../../image/index/header.jpg) center / cover;	/*背景色*/
 	color: #fff;	/*文字色*/
 	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 footer a {color: #fff;}
 footer a:hover {color: #fff;}
@@ -464,7 +584,7 @@ footer .pr {display: block;font-size: 80%;}
 #footermenu {
 	overflow: hidden;
 	padding: 20px 0;	/*上下、左右へのボックス内の余白*/
-	background: url(../images/logo.png) no-repeat 95% center/8%;	/*フッターイメージ画像の読み込み。左から95%、上下中央に配置。幅8%。*/
+	background: url(../../image/index/logo.png) no-repeat 95% center/8%;	/*フッターイメージ画像の読み込み。左から95%、上下中央に配置。幅8%。*/
 }
 /*リンクテキスト*/
 #footermenu a {
@@ -678,14 +798,14 @@ img.fr {float: right;width:30%;margin-left: 20px;margin-bottom: 20px;}
 	width: 50px;	/*幅*/
 	height: 50px;	/*高さ*/
 }
-/*三本バーアイコン*/
+/* 三本バーアイコン
 #menubar_hdr.close {
-	background: #66b3d3 url(../images/icon_menu.png) no-repeat center top/50px;	/*背景色、背景画像の読み込み、画像の上半分（３本マーク）を表示。幅は50px。*/
+	background: #66b3d3 url(../images/icon_menu.png) no-repeat center top/50px;	/*背景色、背景画像の読み込み、画像の上半分（３本マーク）を表示。幅は50px。
 }
-/*閉じるアイコン*/
+閉じるアイコン
 #menubar_hdr.open {
-	background: #66b3d3 url(../images/icon_menu.png) no-repeat center bottom/50px;	/*背景色、背景画像の読み込み、画像の下半分（×マーク）を表示。幅は50px。*/
-}
+	background: #66b3d3 url(../images/icon_menu.png) no-repeat center bottom/50px;	/*背景色、背景画像の読み込み、画像の下半分（×マーク）を表示。幅は50px。
+} */
 
 /*fixmenu設定（メニューが画面上部に到達した際のスタイル）
 ---------------------------------------------------------------------------*/
@@ -790,6 +910,10 @@ body {
 /*section同士の余白*/
 .main section + section {
 	margin-top: 20px;
+}
+
+#contents .main .list img {
+    height: 75px;
 }
 
 /*その他
