@@ -20,4 +20,5 @@ Route::get('/', function () {
 
 Route::get('/sample',[SampleController::class, 'index']);
 Route::get('/sample2',[SampleController::class, 'change']);
+Route::get('/sample3/{hotel_id?}',[SampleController::class, 'info']);
 Route::post('/sample2',[SampleController::class, 'search']);

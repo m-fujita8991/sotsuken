@@ -88,7 +88,7 @@
 							</div>
 							@for($i=0;$i < count($items);$i++)
 							<div class="list">
-								<a href="">
+								<a href="sample3/{{$items[$i]->hotel_id}}">
 									<figure><img src={{$items[$i]->image}} alt="写真の説明"></figure>
 									<h4>{{$items[$i]->name}}</h4>
 									<table>

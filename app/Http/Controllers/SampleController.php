@@ -28,4 +28,10 @@ class SampleController extends Controller
             return view('sample/sample2',['items'=>$item]);
         }
     }
+
+    public function info($hotel_id){
+        $params = $hotel_id;
+        $item = DB::select("select * from hotel where hotel_id = $params");
+        return view('sample/sample3',['items'=>$item]);
+    }
 }
