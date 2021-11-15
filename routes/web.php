@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SampleController;
+use App\Http\Controllers\SotukenController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +16,10 @@ use App\Http\Controllers\SampleController;
 */
 
 Route::get('/', function () {
-    return view('sotuken/hotel');
+    return view('sotuken/top');
 });
+
+Route::post('sotuken/index',[SotukenController::class, 'search']);
 
 Route::get('/sample',[SampleController::class, 'index']);
 Route::get('/sample2',[SampleController::class, 'change']);
