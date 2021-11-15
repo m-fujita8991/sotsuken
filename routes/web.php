@@ -15,7 +15,7 @@ use App\Http\Controllers\SampleController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('sotuken/hotel');
 });
 
 Route::get('/sample',[SampleController::class, 'index']);
