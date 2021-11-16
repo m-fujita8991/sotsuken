@@ -66,7 +66,7 @@
   <footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/top.js"></script>
+    <script type="text/javascript" src="js/top.js?20211115"></script>
   </footer>
 </body>
 </html>
