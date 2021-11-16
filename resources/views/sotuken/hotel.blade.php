@@ -6,7 +6,7 @@
 	<title>sudomari.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
-	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211116">
+	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211117">
 </head>
 
 <body>
