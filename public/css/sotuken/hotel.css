@@ -16,8 +16,11 @@ body {
 	background: #fff;	/*背景色*/
 	-webkit-text-size-adjust: none;
 }
-#logo img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
-
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
+ul {list-style-type: none;}
+ol {padding-left: 40px;padding-bottom: 15px;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
 
 #container{
 	min-height: 100vh;
@@ -56,6 +59,10 @@ body {
 .flex-item {
     flex-basis: 100%;
 }
+
+#pic_frame {
+	text-align: center;
+  }
 
 /* 食事タブ */
 .rice {
@@ -452,6 +459,15 @@ footer a {color: #fff;}
 footer a:hover {color: #fff;}
 footer .pr {display: block;font-size: 80%;}
 
+/*フッターメニュー
+---------------------------------------------------------------------------*/
+/*ボックス全体*/
+#footermenu {
+	overflow: hidden;
+	padding: 20px 0;	/*上下、左右へのボックス内の余白*/
+	background: url(../images/logo.png) no-repeat 95% center/8%;	/*フッターイメージ画像の読み込み。左から95%、上下中央に配置。幅8%。*/
+}
+
 /*コピーライト
 ---------------------------------------------------------------------------*/
 #copyright {
@@ -535,6 +551,36 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
 body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 	background: #999;	/*背景色*/
 }
+
+/*その他
+---------------------------------------------------------------------------*/
+.look {background: #ccc;padding: 5px 10px;border-radius: 4px;}
+.mb15,.mb1em {margin-bottom: 15px !important;}
+.mb20 {margin-bottom: 20px !important;}
+.mb30 {margin-bottom: 30px !important;}
+.mb50 {margin-bottom: 50px !important;}
+.p0 {padding:0 !important;}
+.clear {clear: both;}
+ul.disc {padding: 0em 25px 15px;list-style: disc;}
+.color1, .color1 a {color: #66b3d3 !important;}
+.pr {font-size: 10px;}
+.wl {width: 96%;}
+.ws {width: 50%;}
+.c {text-align: center !important;}
+.r {text-align: right !important;}
+.l {text-align: left !important;}
+.w50 {overflow: hidden;width: 50%;}
+.fl {float: left;}
+img.fl {float: left;width:30%;margin-right: 20px;margin-bottom: 20px;}
+.fr {float: right;}
+img.fr {float: right;width:30%;margin-left: 20px;margin-bottom: 20px;}
+.big1 {font-size: 22px;}
+.sub .big1 {font-size: 12px;}
+.mini1 {font-size: 11px;display: inline-block;line-height: 1.5;}
+.sh {display: none;}
+.date {text-align: right;color: #999;font-size: 11px;}
+
+
 
 /*画面を横向きにした場合の高さが500px以下の場合の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
