@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
     <link rel="icon" href="../../image/common/icon.ico">
-	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211118">
+	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211119">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                     <section>
                         <h2>{{$item->name}}</h2>
                         <div class="top-hotel">
-                            <img src={{$item->top_image}} alt="写真の説明" style="display: block; margin: auto;">
+                            <img class="top-img" src={{$item->top_image}} alt="写真の説明">
                             <p class="top-moji">{{$item->top_text}}</p>
                             <div class="center">
                                 <p><a href={{$item->hotel_reserve_url}} class="btn" target="blank">予約はこちら</a></p>
@@ -35,19 +35,19 @@
                         <div class="flex-container">
                             <div class="flex-item">
                                 <div class="image-wrap">
-                                    <img src={{$item->hotel_institution_image1}}>
+                                    <img class="center-img"src={{$item->hotel_institution_image1}}>
                                     <p>{{$item->hotel_institution_text1}}</p>
                                 </div>
                             </div>
                             <div class="flex-item">
                                 <div class="image-wrap">
-                                    <img src={{$item->hotel_institution_image2}}>
+                                    <img class="center-img" src={{$item->hotel_institution_image2}}>
                                     <p>{{$item->hotel_institution_text2}}</p>
                                 </div>
                             </div>
                             <div class="flex-item">
                                 <div class="image-wrap">
-                                    <img src={{$item->hotel_institution_image3}}>
+                                    <img class="center-img" src={{$item->hotel_institution_image3}}>
                                     <p>{{$item->hotel_institution_text3}}</p>
                                 </div>
                             </div>
@@ -62,12 +62,12 @@
                             <label class="tab_class" for="tab1">ランチ</label>
                             <div class="content_class">
                                 <div class="image_left">
-                                    <img src={{$item->hotel_lunch_image1}} alt="写真の説明">
+                                    <img class="meal-img" src={{$item->hotel_lunch_image1}} alt="写真の説明">
                                     <p style="font-size: 1.5em; color: black">{{$item->hotel_lunch_name1}}</p>
                                     <p>{{$item->hotel_lunch_text1}}</p>
                                 </div>
                                 <div class="image_right">
-                                    <img src={{$item->hotel_lunch_image2}} alt="写真の説明">
+                                    <img class="meal-img" src={{$item->hotel_lunch_image2}} alt="写真の説明">
                                     <p style="font-size: 1.5em; color: black">{{$item->hotel_lunch_name2}}</p>
                                     <p>{{$item->hotel_lunch_text2}}</p>
                                 </div>
@@ -78,12 +78,12 @@
                             <label class="tab_class" for="tab2">ディナー</label>
                             <div class="content_class">
                                 <div class="image_left">
-                                    <img src={{$item->hotel_dinner_image1}} alt="写真の説明">
+                                    <img class="meal-img" src={{$item->hotel_dinner_image1}} alt="写真の説明">
                                     <p style="font-size: 1.5em; color: black">{{$item->hotel_dinner_name1}}</p>
                                     <p>{{$item->hotel_dinner_text1}}</p>
                                 </div>
                                 <div class="image_right">
-                                    <img src={{$item->hotel_dinner_image2}} alt="写真の説明">
+                                    <img class="meal-img" src={{$item->hotel_dinner_image2}} alt="写真の説明">
                                     <p style="font-size: 1.5em; color: black">{{$item->hotel_dinner_name2}}</p>
                                     <p>{{$item->hotel_dinner_text2}}</p>
                                 </div>
