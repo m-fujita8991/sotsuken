@@ -17,6 +17,11 @@ class SampleController extends Controller
         return view('sample/sample2',['items'=>$item]);
     }
 
+    public function hotel(){
+        $item = DB::select('select * from hotel_info where hotel_id=2');
+        return view('sotuken/hotel',['items'=>$item]);
+    }
+
     public function search(Request $request){
         $locate = $request->locate_id;
         $prefecture = $request->prefecture_id;
