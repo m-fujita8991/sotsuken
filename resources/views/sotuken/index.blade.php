@@ -6,8 +6,8 @@
 	<title>素泊まり.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
-	<link rel="stylesheet" href="css/sample/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="../css/sotuken/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 
 		<header>
 			<div class="inner">
-				<h1 id="logo"><a href=""><img src="image/index/logo.png" alt="素泊まり.com"></a></h1>
+				<h1 id="logo"><a href="../"><img src="../image/index/logo.png" alt=sudomari.com"></a></h1>
 			</div>
 
 		</header>
@@ -66,7 +66,7 @@
 			<select class="pref" id="pref" name="prefecture_id" required></select>
 			<label class="pref_selectlabel">県名を選択してください</label>
 
-			<input type="image" class="search_button" src="image/index/search.png" onmouseover="this.src='image/index/search2.png'" onmouseout="this.src='image/index/search.png'">
+			<input type="image" class="search_button" src="../image/index/search.png" onmouseover="this.src='../image/index/search2.png'" onmouseout="this.src='../image/index/search.png'">
 		</form>
 
 		<div id="contents">
@@ -132,7 +132,6 @@
 	<!--/#container-->
 
 	<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
-
 </body>
 
 </html>
