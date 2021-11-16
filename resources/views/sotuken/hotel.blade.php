@@ -6,8 +6,12 @@
 	<title>sudomari.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
+<<<<<<< HEAD
 	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211116">
     <link rel="icon" href="../../image/common/icon.ico">
+=======
+	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211117">
+>>>>>>> 09b2de7b04229d8bb341d4672434922291e72d19
 </head>
 
 <body>
@@ -25,6 +29,10 @@
                         <h2>{{$item->name}}</h2>
                         <div class="top-hotel">
                             <img src={{$item->top_image}} alt="写真の説明" style="display: block; margin: auto;">
+                            <p class="top-moji">{{$item->top_text}}</p>
+                            <div class="center">
+                                <p><a href={{$item->hotel_reserve_url}} class="btn" target="blank">予約はこちら</a></p>
+                            </div>
                         </div>
 
                         <h2>施設のご紹介</h2>
