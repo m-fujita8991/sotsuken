@@ -41,6 +41,12 @@ table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
     display: flex;
 }
 
+.top-moji{
+	font-size: 24px;
+	text-align: center;
+	color:#111;
+}
+
 .image-wrap{
     margin: 10px 5px;
 }
@@ -902,6 +908,12 @@ body {
     width: 70%;
 }
 
+.top-moji{
+	font-size: 10px;
+	text-align: center;
+	color:#111;
+}
+
 /* 施設＆部屋タブ */
 .flex-container {
     display: flex;
@@ -996,13 +1008,13 @@ img.fr {float: none;display: block;width:90%;margin: 0 auto 20px;}
 	display: inline-block;
 	padding: 0.3em 1em;
 	text-decoration: none;
-	color: #67c5ff;
-	border: solid 2px #67c5ff;
+	color: #3399FF;
+	border: solid 2px #3399FF;
 	border-radius: 3px;
 	transition: .4s;
   }
   
   .btn:hover {
-	background: #67c5ff;
+	background: #3399FF;
 	color: white;
   }
