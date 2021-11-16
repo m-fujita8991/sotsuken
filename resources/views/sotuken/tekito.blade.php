@@ -1,0 +1,1 @@
+<img src={{$items[0]->image}} alt="写真の説明">
