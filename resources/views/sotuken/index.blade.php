@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>素泊まり.com</title>
+	<title>sudomari.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
 	<link rel="stylesheet" href="../css/sotuken/style.css">
@@ -16,7 +16,7 @@
 
 		<header>
 			<div class="inner">
-				<h1 id="logo"><a href="../"><img src="../image/index/logo.png" alt=sudomari.com"></a></h1>
+				<h1 id="logo"><a href="../"><img src="../image/index/logo.png" alt="sudomari.com"></a></h1>
 			</div>
 
 		</header>
@@ -88,7 +88,7 @@
 							</div>
 							@for($i=0;$i < count($items);$i++)
 							<div class="list">
-								<a href="tekito/{{$items[$i]->hotel_id}}">
+								<a href="hotel/{{$items[$i]->hotel_id}}">
 									<figure><img src={{$items[$i]->image}} alt="写真の説明"></figure>
 									<h4>{{$items[$i]->name}}</h4>
 									<table>

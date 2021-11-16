@@ -3,18 +3,17 @@
 
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>素泊まり.com</title>
+	<title>sudomari.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
-	<link rel="stylesheet" href="../../public/css/sotuken/hotel.css?20211117">
+	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211116">
 </head>
 
 <body>
 	<div id="container">
 		<header>
 			<div class="inner">
-				<h1 id="logo"><a href=""><img src="../../public/image/index/logo.png" alt="素泊まり.com"></a></h1>
+				<h1 id="logo"><a href="../../"><img src="../../image/index/logo.png" alt="sudomari.com"></a></h1>
 			</div>
 		</header>
         @foreach ($items as $item)

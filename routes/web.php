@@ -16,16 +16,15 @@ use App\Http\Controllers\SotukenController;
 */
 
 Route::get('/', function () {
-    return view('sotuken/hotel');
+    return view('sotuken/top');
 });
 
 Route::post('sotuken/index',[SotukenController::class, 'search']);
-Route::get('sotuken/tekito/{hotel_id?}',[SotukenController::class, 'info']);
-
+Route::get('sotuken/hotel/{hotel_id?}',[SotukenController::class, 'info']);
 
 Route::get('/sample',[SampleController::class, 'index']);
 Route::get('/sample2',[SampleController::class, 'change']);
 Route::get('/sample3/{hotel_id?}',[SampleController::class, 'info']);
 Route::post('/sample2',[SampleController::class, 'search']);
 
-Route::get('sotuken/hotel',[SampleController::class, 'index']);
+Route::get('sotuken/hotel',[SampleController::class, 'hotel']);
