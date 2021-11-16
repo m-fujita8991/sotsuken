@@ -988,3 +988,21 @@ img.fr {float: none;display: block;width:90%;margin: 0 auto 20px;}
 
 }
 
+.center p{
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #67c5ff;
+	border: solid 2px #67c5ff;
+	border-radius: 3px;
+	transition: .4s;
+  }
+  
+  .btn:hover {
+	background: #67c5ff;
+	color: white;
+  }
