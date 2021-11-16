@@ -24,7 +24,7 @@
                         <h2>{{$item->name}}</h2>
                         <div class="top-hotel">
                             <img src={{$item->top_image}} alt="写真の説明" style="display: block; margin: auto;">
-                            <p class="top-moji">{{$item->hotel_text}}</p>
+                            <p class="top-moji">{{$item->top_text}}</p>
                             <div class="center">
                                 <p><a href={{$item->hotel_reserve_url}} class="btn" target="blank">予約はこちら</a></p>
                             </div>
