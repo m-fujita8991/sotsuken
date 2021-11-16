@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/sotuken/top.css.map">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" href="image/icon.ico">
+  <link rel="icon" href="image/common/icon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
 </head>
   
@@ -41,7 +41,7 @@
 
   <h1 class=moji>泊まる　食べる<br>を繋げる</h1>
   <div class="band"></div>
-  <img class="logo" src="image/top/logo.png" alt="">
+  <img class="logo" src="image/common/logo.png" alt="">
   <img class="sp" src="image/top/top-haikei.jpg" alt="" width="200px">
 
   <form method="POST" action="sotuken/index" class="search_box">

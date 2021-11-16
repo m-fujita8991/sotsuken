@@ -7,13 +7,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
 	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211116">
+    <link rel="icon" href="../../image/common/icon.ico">
 </head>
 
 <body>
 	<div id="container">
 		<header>
 			<div class="inner">
-				<h1 id="logo"><a href="../../"><img src="../../image/index/logo.png" alt="sudomari.com"></a></h1>
+				<h1 id="logo"><a href="../../"><img src="../../image/common/logo.png" alt="sudomari.com"></a></h1>
 			</div>
 		</header>
         @foreach ($items as $item)

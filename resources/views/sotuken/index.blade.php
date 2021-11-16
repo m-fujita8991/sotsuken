@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
 	<link rel="stylesheet" href="../css/sotuken/style.css">
+	<link rel="icon" href="../image/common/icon.ico">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
@@ -16,7 +17,7 @@
 
 		<header>
 			<div class="inner">
-				<h1 id="logo"><a href="../"><img src="../image/index/logo.png" alt="sudomari.com"></a></h1>
+				<h1 id="logo"><a href="../"><img src="../image/common/logo.png" alt="sudomari.com"></a></h1>
 			</div>
 
 		</header>
