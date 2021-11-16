@@ -20,6 +20,8 @@ Route::get('/', function () {
 });
 
 Route::post('sotuken/index',[SotukenController::class, 'search']);
+Route::get('sotuken/tekito/{hotel_id?}',[SotukenController::class, 'info']);
+
 
 Route::get('/sample',[SampleController::class, 'index']);
 Route::get('/sample2',[SampleController::class, 'change']);
