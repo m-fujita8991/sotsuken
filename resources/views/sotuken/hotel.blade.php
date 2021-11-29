@@ -24,7 +24,7 @@
                     <section>
                         <h2>{{$item->name}}</h2>
                         <img class="top-img" src={{$item->top_image}} alt="写真の説明">
-                        <p class="top-moji">{{$item->top_text}}</p>
+                        <p class="top-moji">{!!$item->top_text!!}</p>
                         <div class="center">
                             <p><a href={{$item->hotel_reserve_url}} class="btn" target="blank">予約はこちら</a></p>
                         </div>
