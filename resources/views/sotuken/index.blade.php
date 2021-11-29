@@ -6,7 +6,7 @@
 	<title>sudomari.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
-	<link rel="stylesheet" href="../css/sotuken/style.css">
+	<link rel="stylesheet" href="../css/sotuken/style.css?20211129">
 	<link rel="icon" href="../image/common/icon.ico">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -96,8 +96,14 @@
 										<tr>
 											<th>所在地</th>
 											<td>{{$items[$i]->building}}</td>
+										</tr>
+										<tr>
 											<th>価格</th>
 											<td>{{$items[$i]->price}}円</td>
+										</tr>
+										<tr>
+											<th>最寄り</th>
+											<td>{{$items[$i]->time}}</td>
 										</tr>
 									</table>
 								</a>
