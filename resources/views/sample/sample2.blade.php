@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
 	<div id="container">
 
 		<header>
@@ -20,6 +19,16 @@
 			</div>
 
 		</header>
+
+		<ol class="breadcrumb">
+			<li>
+				<span>カテゴリー1</span>
+			</li>
+
+			<li>
+				<span>カテゴリー2</span>
+			</li>
+		</ol>
 
 		<form method="POST" action="#" class="search_box">
 			<script>
