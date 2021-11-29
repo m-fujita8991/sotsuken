@@ -17,7 +17,7 @@
 
 		<header>
 			<div class="inner">
-				<h1 id="logo"><a href="../"><img src="../image/common/logo.png" width=170px alt="sudomari.com"></a></h1>
+				<h1 id="logo"><a href="../"><img src="../image/common/logo.png" width=300px alt="sudomari.com"></a></h1>
 			</div>
 
 		</header>
