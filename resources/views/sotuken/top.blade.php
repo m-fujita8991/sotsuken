@@ -39,7 +39,7 @@
     </div>
   </div>
 
-  <h1 class=moji>働くと　<br>を繋げる</h1>
+  <h1 class=moji>働くカタチの<br>新時代</h1>
   <div class="band"></div>
   <img class="logo" src="image/common/logo.png" alt="">
   <img class="sp" src="image/top/top-haikei.jpg" alt="" width="200px">
