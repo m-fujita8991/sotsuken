@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>sudomari.com</title>
+	<title>wakenavi.com</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
     <link rel="icon" href="../../image/common/icon.ico">

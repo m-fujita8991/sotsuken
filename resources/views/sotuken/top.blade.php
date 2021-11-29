@@ -3,7 +3,7 @@
 
 <head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#">
   <meta charset="utf-8">
-  <title>sudomari.com</title>
+  <title>wakenavi.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Webサイトの説明">
   <meta name="google-site-verification" content=""> <!-- googleサーチコンソール メタタグ だよ -->
@@ -39,7 +39,7 @@
     </div>
   </div>
 
-  <h1 class=moji>泊まる　食べる<br>を繋げる</h1>
+  <h1 class=moji>働くと　<br>を繋げる</h1>
   <div class="band"></div>
   <img class="logo" src="image/common/logo.png" alt="">
   <img class="sp" src="image/top/top-haikei.jpg" alt="" width="200px">
