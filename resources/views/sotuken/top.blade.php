@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-  <meta property="og:title" content="sudomari.com">
+  <meta property="og:title" content="WORKATION NAVI">
   <meta property="og:description" content="Webサイトの説明">
   <meta property="og:locale" content="ja_JP">
   <link rel="stylesheet" href="js/slick/slick.css">
