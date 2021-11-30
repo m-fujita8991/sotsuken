@@ -22,6 +22,7 @@ class SotukenController extends Controller
     public function info($hotel_id){
         $params = $hotel_id;
         $item = DB::select("select * from hotel_info where hotel_id = $params");
-        return view('sotuken/hotel',['items'=>$item]);
+        $work = DB::select("select * from hotel_work where hotel_id = $params");
+        return view('sotuken/hotel',['items'=>$item,'works'=>$work]);
     }
 }

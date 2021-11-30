@@ -44,6 +44,14 @@ section h2{
 	text-align: center;
 }
 
+.t-moji{
+	font-size: 30px;
+	margin-left: 8%;
+	color:#111;
+	width: 80%;
+	text-align: center;
+}
+
 .flex-container {
     display: flex;
 }

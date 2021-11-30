@@ -25,6 +25,31 @@
                         <h2>{{$item->name}}</h2>
                         <img class="top-img" src={{$item->top_image}} alt="写真の説明">
                         <p class="top-moji">{!!$item->top_text!!}</p>
+
+                        @foreach ($works as $work)
+                        <h2>ワーケーションプラン</h2>
+                        <div class="flex-container">
+                            <div class="flex-item">
+                                <div class="image-wrap">
+                                    <img class="center-img"src={{$work->hotel_work_image1}}>
+                                </div>
+                            </div>
+                            <div class="flex-item">
+                                <div class="image-wrap">
+                                    <img class="center-img" src={{$work->hotel_work_image2}}>
+                                </div>
+                            </div>
+                            <div class="flex-item">
+                                <div class="image-wrap">
+                                    <img class="center-img" src={{$work->hotel_work_image3}}>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="t-moji">{{$work->hotel_work_title1}}</p>
+                        <p class="top-moji">{!!$work->hotel_work_text1!!}</p>
+                        <p class="t-moji">{{$work->hotel_work_title2}}</p>
+                        <p class="top-moji">{!!$work->hotel_work_text2!!}</p>
+                        @endforeach
                         <div class="center">
                             <p><a href={{$item->hotel_reserve_url}} class="btn" target="blank">予約はこちら</a></p>
                         </div>
