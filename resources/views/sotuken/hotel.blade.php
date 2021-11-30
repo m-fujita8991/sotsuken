@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
     <link rel="icon" href="../../image/common/icon.ico">
-	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211120">
+	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211123">
 </head>
 
 <body>
