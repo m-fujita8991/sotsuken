@@ -127,7 +127,7 @@
 			<!--/#footermenu-->
 
 			<div id="copyright">
-				<small>Copyright&copy; 素泊まり.com All Rights Reserved.</small>
+				<small>Copyright&copy; WORKATION NAVI All Rights Reserved.</small>
 				<span class="pr"><a href="https://template-party.com/" target="_blank">《Web
 						Design:Template-Party》</a></span>
 			</div>

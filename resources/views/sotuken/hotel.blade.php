@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Webサイトの説明">
     <link rel="icon" href="../../image/common/icon.ico">
-	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211120">
+	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211123">
 </head>
 
 <body>
@@ -129,7 +129,7 @@
             </div>
             <!--/#footermenu-->
             <div id="copyright">
-                <small>Copyright&copy; 素泊まり.com All Rights Reserved.</small>
+                <small>Copyright&copy; WORKATION NAVI All Rights Reserved.</small>
                 <span class="pr">
                     <a href="https://template-party.com/" target="_blank">《WebDesign:Template-Party》</a>
                 </span>
