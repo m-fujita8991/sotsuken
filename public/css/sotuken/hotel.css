@@ -270,12 +270,19 @@ body.is-fixed #contents {
 #contents h2 {
 	clear: both;
 	margin-bottom: 20px;
+	font-family: 'Shippori Mincho B1', serif;
+	font-weight: bold;
 	color: #fff;		/*文字色*/
 	background: url(../../image/index/header.jpg) center / cover;	/*背景色*/
 	padding: 5px 20px;	/*上下、左右へのボックス内の余白*/
 	font-size: 20px;	/*文字サイズ*/
 	border-radius: 3px;	/*角丸のサイズ*/
 }
+#contents h2:before {
+	content: '●';
+	color: white;
+	margin-right: 8px;
+  }
 
 h3 {
 	border-top: 1px dashed rgb(155, 155, 155);
