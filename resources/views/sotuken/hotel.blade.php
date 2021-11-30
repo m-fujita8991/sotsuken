@@ -8,6 +8,9 @@
 	<meta name="description" content="Webサイトの説明">
     <link rel="icon" href="../../image/common/icon.ico">
 	<link rel="stylesheet" href="../../css/sotuken/hotel.css?20211123">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,28 +30,11 @@
                         <p class="top-moji">{!!$item->top_text!!}</p>
 
                         @foreach ($works as $work)
-                        <h2>ワーケーションプラン</h2>
-                        <div class="flex-container">
-                            <div class="flex-item">
-                                <div class="image-wrap">
-                                    <img class="center-img"src={{$work->hotel_work_image1}}>
-                                </div>
-                            </div>
-                            <div class="flex-item">
-                                <div class="image-wrap">
-                                    <img class="center-img" src={{$work->hotel_work_image2}}>
-                                </div>
-                            </div>
-                            <div class="flex-item">
-                                <div class="image-wrap">
-                                    <img class="center-img" src={{$work->hotel_work_image3}}>
-                                </div>
-                            </div>
-                        </div>
+                        <h3></h3>
                         <p class="t-moji">{{$work->hotel_work_title1}}</p>
-                        <p class="top-moji">{!!$work->hotel_work_text1!!}</p>
+                        <p class="w-moji">{!!$work->hotel_work_text1!!}</p>
                         <p class="t-moji">{{$work->hotel_work_title2}}</p>
-                        <p class="top-moji">{!!$work->hotel_work_text2!!}</p>
+                        <p class="w-moji">{!!$work->hotel_work_text2!!}</p>
                         @endforeach
                         <div class="center">
                             <p><a href={{$item->hotel_reserve_url}} class="btn" target="blank">予約はこちら</a></p>
