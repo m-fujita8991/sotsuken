@@ -80,11 +80,31 @@ header #logo {
 /*メインメニューのブロック
 ---------------------------------------------------------------------------*/
 /*メニューブロック*/
+.breadcrumb {
+	margin: 0 0 0 15%;
+	padding: 0 0 0 0;
+	list-style: none;
+  }
+  
+  .breadcrumb li {
+	display: inline;/*横に並ぶように*/
+	list-style: none;
+	font-weight: bold;/*太字*/
+  }
+  .breadcrumb li:after {/* >を表示*/
+	content: '>';
+	padding: 0 0.2em;
+	color: #555;
+  }
+  
+  .breadcrumb li:last-child:after {
+	content: '';
+  }
 
 .search_box {
 	position: relative;
 	width: 70%;
-	margin: 2em auto;
+	margin: 2em auto 5px auto;
 	text-align: center;
 	display: flex;
 }
@@ -271,11 +291,11 @@ body.is-fixed #contents {
 	position: relative;z-index: 1;
 	overflow: hidden;
 	background: #fafafa;	/*背景色*/
-	padding: 30px 0;
+	padding: 5px 0;
 }
 /*contentsの中にあるinner*/
 #contents .inner {
-	padding: 20px 0px;	/*上下、左右へのブロック内の余白*/
+	padding: 0px 0px;	/*上下、左右へのブロック内の余白*/
 }
 /*h2タグ*/
 #contents h2 {
