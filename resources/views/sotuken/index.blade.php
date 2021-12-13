@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 
+<<<<<<< HEAD
 	<head>
 		<meta charset="utf-8">
 		<title>WORKATION NAVI</title>
@@ -19,6 +20,26 @@
 				<div class="inner">
 					<h1 id="logo"><a href="../"><img src="../image/common/logo.png" width=300px alt="WORKATION NAVI"></a></h1>
 				</div>
+=======
+<head>
+	<meta charset="utf-8">
+	<title>WORKATION NAVI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Webサイトの説明">
+	<link rel="stylesheet" href="../css/sotuken/style.css?202115529">
+	<link rel="icon" href="../image/common/icon.ico">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+	<div id="container">
+
+		<header>
+			<div class="inner">
+				<h1 id="logo"><a href="../"><img src="../image/common/logo.png" width=300px alt="WORKATION NAVI"></a></h1>
+			</div>
+>>>>>>> 638bff56d0580aa62cc740a977fc75ffd29f9ad3
 
 			</header>
 
@@ -49,6 +70,7 @@
 							})	
 						});
 					});
+<<<<<<< HEAD
 				</script>
 				@csrf
 				
@@ -114,6 +136,142 @@
 
 					</div>
 					<!--/.main-->
+=======
+				});
+			</script>
+			@csrf
+			
+
+			<select class="areaSelect" id="areaSelect" name="locate_id" required>
+				<option hidden disabled selected></option>
+				<option value="0">北海道・東北</option>
+				<option value="1">関東</option>
+				<option value="2">中部</option>
+				<option value="3">近畿</option>
+				<option value="4">中国・四国</option>
+				<option value="5">九州</option>
+			</select>
+			<label class="areaSelect_selectlabel">地域を選択してください</label>
+
+			<select class="pref" id="pref" name="prefecture_id" required></select>
+			<label class="pref_selectlabel">県名を選択してください</label>
+
+			<input type="image" class="search_button" src="../image/index/search.png" onmouseover="this.src='../image/index/search2.png'" onmouseout="this.src='../image/index/search.png'">
+		</form>
+
+		<ol class="breadcrumb">
+			<li>
+				<span>
+					@switch($locate)
+						@case(0) 北海道・東北 @break
+						@case(1) 関東 @break
+						@case(2) 中部 @break
+						@case(3) 近畿 @break
+						@case(4) 中国・四国 @break	
+						@case(5) 九州 @break
+					@endswitch
+				</span>
+			</li>
+
+			<li>
+				<span>
+					@switch($prefecture)
+						@case(0) 全域 @break
+						@case(1) 北海道 @break
+						@case(2) 青森県 @break
+						@case(3) 岩手県 @break
+						@case(4) 宮城県 @break
+						@case(5) 秋田県 @break
+						@case(6) 山形県 @break
+						@case(7) 福島県 @break
+						@case(8) 茨城県 @break
+						@case(9) 栃木県 @break
+						@case(10) 群馬県 @break
+						@case(11) 埼玉県 @break
+						@case(12) 千葉県 @break
+						@case(13) 東京都 @break
+						@case(14) 神奈川県 @break
+						@case(15) 新潟県 @break
+						@case(16) 富山県 @break
+						@case(17) 石川県 @break
+						@case(18) 福井県 @break
+						@case(19) 山梨県 @break
+						@case(20) 長野県 @break
+						@case(21) 岐阜県 @break
+						@case(22) 静岡県 @break
+						@case(23) 愛知県 @break
+						@case(24) 三重県 @break
+						@case(25) 滋賀県 @break
+						@case(26) 京都府 @break
+						@case(27) 大阪府 @break
+						@case(28) 兵庫県 @break
+						@case(29) 奈良県 @break
+						@case(30) 和歌山県 @break
+						@case(31) 鳥取県 @break
+						@case(32) 島根県 @break
+						@case(33) 岡山県 @break
+						@case(34) 広島県 @break
+						@case(35) 山口県 @break
+						@case(36) 徳島県 @break
+						@case(37) 香川県 @break
+						@case(38) 愛媛県 @break
+						@case(39) 高知県 @break
+						@case(40) 福岡県 @break
+						@case(41) 佐賀県 @break
+						@case(42) 長崎県 @break
+						@case(43) 熊本県 @break
+						@case(44) 大分県 @break
+						@case(45) 宮崎県 @break
+						@case(46) 鹿児島県 @break
+						@case(47) 沖縄県 @break
+					@endswitch
+				</span>
+			</li>
+		</ol>
+
+		<div id="contents">
+
+			<div class="inner">
+
+				<div class="main">
+
+					<section>
+
+						<h2>ホテル　一覧</h2>
+						@if(count($items) == 0)
+							<div class="item_count">
+								<p>検索結果は{{count($items)}}件です。</p>
+							</div>
+						@else
+							<div class="item_count">
+								<p>検索結果は{{count($items)}}件です。</p>
+							</div>
+							@for($i=0;$i < count($items);$i++)
+							<div class="list">
+								<a href="hotel/{{$items[$i]->hotel_id}}">
+									<figure><img src={{$items[$i]->image}} alt="写真の説明"></figure>
+									<h4>{{$items[$i]->name}}</h4>
+									<table>
+										<tr>
+											<th>所在地</th>
+											<td>{{$items[$i]->building}}</td>
+										</tr>
+										<tr>
+											<th>価格</th>
+											<td>{{$items[$i]->price}}円</td>
+										</tr>
+										<tr>
+											<th>最寄り</th>
+											<td>{{$items[$i]->time}}</td>
+										</tr>
+									</table>
+								</a>
+							</div>
+							@endfor
+						@endif
+					</section>
+
+>>>>>>> 638bff56d0580aa62cc740a977fc75ffd29f9ad3
 				</div>
 				<!--/.inner-->
 

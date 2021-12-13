@@ -12,10 +12,10 @@ class SotukenController extends Controller
         $prefecture = $request->prefecture_id;
         if($prefecture == 0){
             $item = DB::select("select * from hotel where locate_id = '$locate'");
-            return view('sotuken/index',['items'=>$item]);
+            return view('sotuken/index',['items'=>$item,'locate'=>$locate,'prefecture'=>$prefecture]);
         }else{
             $item = DB::select("select * from hotel where prefecture_id = '$prefecture'");
-            return view('sotuken/index',['items'=>$item]);
+            return view('sotuken/index',['items'=>$item,'locate'=>$locate,'prefecture'=>$prefecture]);
         }
     }
 
