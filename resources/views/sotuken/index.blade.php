@@ -138,7 +138,7 @@
 					@endswitch
 				</span>
 			</li>
-		</ol>
+		</ol>	
 
 			<div id="contents">
 
